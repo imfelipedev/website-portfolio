@@ -21,9 +21,11 @@ export default function Home() {
                     </p>
                 </motion.div>
 
-                <motion.div initial={{ x: "7rem", opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 2, type: "spring" }} className="my-auto hidden sm:block">
-                    <Lottie animationData={animationData} loop={true} />
-                </motion.div>
+                <div className="my-auto hidden sm:block">
+                    <motion.div initial={{ x: "7rem", opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 2, type: "spring" }}>
+                        <Lottie animationData={animationData} loop={true} />
+                    </motion.div>
+                </div>
             </div>
 
             <motion.div initial={{ y: "2rem", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 2, type: "spring" }} className="mx-auto mb-10 flex">
