@@ -45,7 +45,7 @@ export function Navbar() {
                             <AiOutlineClose size={30} onClick={toggleMenu} />
                         </div>
                     </div>
-                    <ul className="p-5 space-y-5">
+                    <ul className="p-5 space-y-10">
                         <li className="text-black text-base font-semibold hover:text-[#9555fd] transition-all duration-500">
                             <Link href="/" onClick={toggleMenu}>
                                 HOME

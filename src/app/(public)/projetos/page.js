@@ -40,7 +40,7 @@ export default function Projetos() {
     return (
         <section className="bg-[#1F2127] grow">
             <motion.div initial={{ y: "2rem", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, type: "spring" }} className="mt-10">
-                <h1 className="text-[#f1f1f1] font-bold text-2xl text-center">Minhas criações de projetos exclusivos</h1>
+                <h1 className="p-4 text-[#f1f1f1] font-bold text-2xl text-center">Minhas criações de projetos exclusivos</h1>
             </motion.div>
             <motion.div initial={{ y: "2rem", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 2, type: "spring" }} className="my-24 px-4 space-y-36">
                 {projets.map((value, index) => (
