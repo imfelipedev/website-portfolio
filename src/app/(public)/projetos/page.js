@@ -68,7 +68,7 @@ export default function Projetos() {
                                 </div>
                             </div>
                         ) : (
-                            <div key={index} className="mx-auto max-w-[900px] md:flex">
+                            <div key={index} className="mx-auto max-w-[900px] flex flex-col md:flex-row">
                                 <div className="sm:mr-10 flex flex-col">
                                     <Link href={value.link} className="text-[#f1f1f1] font-bold text-xl flex-1 text-right">
                                         {value.name}
@@ -85,7 +85,7 @@ export default function Projetos() {
                                         )}
                                     </div>
                                 </div>
-                                <div className="mt-5 sm:mt-0 mx-auto max-w-[350px] w-full h-[200px] rounded-lg relative overflow-hidden">
+                                <div className="mb-5 sm:mt-0 mx-auto max-w-[350px] w-full h-[200px] rounded-lg relative overflow-hidden order-first md:order-none">
                                     <Image src={value.path} fill={true} style={{ objectFit: "cover" }} alt="Imagem ilustrativa" priority />
                                 </div>
                             </div>
