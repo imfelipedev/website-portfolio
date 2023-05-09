@@ -85,7 +85,7 @@ export default function Projetos() {
                                         )}
                                     </div>
                                 </div>
-                                <div className="mb-5 sm:mt-0 mx-auto max-w-[350px] w-full h-[200px] rounded-lg relative overflow-hidden order-first md:order-none">
+                                <div className="mb-5 sm:mb-0 mx-auto max-w-[350px] w-full h-[200px] rounded-lg relative overflow-hidden order-first md:order-none">
                                     <Image src={value.path} fill={true} style={{ objectFit: "cover" }} alt="Imagem ilustrativa" priority />
                                 </div>
                             </div>
