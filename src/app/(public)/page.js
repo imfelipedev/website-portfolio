@@ -16,9 +16,7 @@ export default function Home() {
                     <motion.h2 initial={{ width: "0%" }} animate={{ width: "100%" }} transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }} className="my-4 text-[#9555fd] text-base font-medium max-w-min w-full overflow-hidden whitespace-nowrap border-r-2 border-[#9555fd] sm:text-2xl lg:text-3xl">
                         Desenvolvedor Full-Stack
                     </motion.h2>
-                    <p className="text-[#f1f1f1]/90 font-medium text-sm lg:text-base">
-                        Sou desenvolvedor full-stack há 6 anos e tenho conhecimento em diversas tecnologias, incluindo Next.js, React, Node.js e Lua. Possuo habilidades para criar projetos eficientes, otimizados e funcionais, do front-end ao back-end, com qualidade e responsividade no layout. Meu objetivo é garantir a satisfação do cliente, entregando projetos de qualidade e escaláveis que atendam às necessidades específicas do projeto.
-                    </p>
+                    <p className="text-[#f1f1f1]/90 font-medium text-sm lg:text-base">Sou desenvolvedor há 6 anos e tenho conhecimento em diversas tecnologias, incluindo Next.js, React, Node.js e Lua. Possuo habilidades para criar projetos eficientes, otimizados e funcionais, do front-end ao back-end, com qualidade e responsividade no layout. Meu objetivo é garantir a satisfação do cliente, entregando projetos de qualidade e escaláveis que atendam às necessidades específicas do projeto.</p>
                 </motion.div>
 
                 <div className="my-auto hidden sm:block">
