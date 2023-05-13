@@ -16,7 +16,9 @@ export function Navbar() {
             <div className="fixed w-full h-[8.0rem] flex items-center justify-center bg-[#1A1A1A] z-10">
                 <div className="p-5 max-w-[90%] w-full flex items-center justify-between">
                     <div className="text-[#9A9A9A] text-[1.6rem] font-bold">
-                        <a href="/">Felipe DEV.</a>
+                        <a href="/" aria-label="Logo marca e redirecioanr para home.">
+                            Felipe DEV.
+                        </a>
                     </div>
 
                     <div className={`cursor-pointer text-white md:hidden`}>
@@ -26,19 +28,27 @@ export function Navbar() {
                     <div className={`hidden md:block`}>
                         <ul className="flex items-center gap-24">
                             <li className="text-[#9A9A9A] text-[1.6rem] font-semibold hover:text-[#F1F1F1] transition-all duration-500">
-                                <a href="#home">HOME</a>
+                                <a href="#home" aria-label="Redirecionar para home.">
+                                    HOME
+                                </a>
                             </li>
 
                             <li className="text-[#9A9A9A] text-[1.6rem] font-semibold hover:text-[#F1F1F1] transition-all duration-500">
-                                <a href="#about">SOBRE</a>
+                                <a href="#about" aria-label="Redirecionar para sessão de sobre.">
+                                    SOBRE
+                                </a>
                             </li>
 
                             <li className="text-[#9A9A9A] text-[1.6rem] font-semibold hover:text-[#F1F1F1] transition-all duration-500">
-                                <a href="#projects">PROJETOS</a>
+                                <a href="#projects" aria-label="Redirecionar para sessão de projetos.">
+                                    PROJETOS
+                                </a>
                             </li>
 
                             <li className="text-[#9A9A9A] text-[1.6rem] font-semibold hover:text-[#F1F1F1] transition-all duration-500">
-                                <a href="#contact">CONTATO</a>
+                                <a href="#contact" aria-label="Redirecionar para sessão de contato.">
+                                    CONTATO
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -59,25 +69,25 @@ export function Navbar() {
 
                     <ul className="p-5 space-y-10">
                         <li className="text-black text-[1.5rem] font-semibold">
-                            <a href="#home" onClick={toggleMenu}>
+                            <a href="#home" aria-label="Redirecionar para home." onClick={toggleMenu}>
                                 HOME
                             </a>
                         </li>
 
                         <li className="text-black text-[1.5rem] font-semibold">
-                            <a href="#about" onClick={toggleMenu}>
+                            <a href="#about" aria-label="Redirecionar para sessão de sobre." onClick={toggleMenu}>
                                 SOBRE
                             </a>
                         </li>
 
                         <li className="text-black text-[1.5rem] font-semibold">
-                            <a href="#projects" onClick={toggleMenu}>
+                            <a href="#projects" aria-label="Redirecionar para sessão de projetos." onClick={toggleMenu}>
                                 PROJETOS
                             </a>
                         </li>
 
                         <li className="text-black text-[1.5rem] font-semibold">
-                            <a href="#contact" onClick={toggleMenu}>
+                            <a href="#contact" aria-label="Redirecionar para sessão de contato." onClick={toggleMenu}>
                                 CONTATO
                             </a>
                         </li>
