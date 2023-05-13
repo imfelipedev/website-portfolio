@@ -59,7 +59,9 @@ export function Navbar() {
                 <div className="fixed w-screen h-screen bg-[#F1F1F1] z-10">
                     <div className="p-5 w-full flex items-center justify-between">
                         <div className="text-black text-opacity-90 text-[2.0rem] font-bold">
-                            <a href="/">Felipe DEV.</a>
+                            <a href="/" aria-label="Redirecionar para sessão de projeto.">
+                                Felipe DEV.
+                            </a>
                         </div>
 
                         <div className={`cursor-pointer text-black md:hidden hover:text-red-500 transition-all duration-500`}>
