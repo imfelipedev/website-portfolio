@@ -15,8 +15,8 @@ const transporter = nodemailer.createTransport(transporterConfiguration);
 async function send(text) {
     const mailOptions = {
         from: {
-            name: "Mistic Protection",
-            address: "zstoresuport@gmail.com",
+            name: "Felipe | Portfólio",
+            address: process.env.EMAIL_USER,
         },
         to: process.env.PRIVATE_EMAIL,
         subject: "Contato - Portfólio",
