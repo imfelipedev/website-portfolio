@@ -1,10 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import { toast } from "react-toastify";
+import { useRef, useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Animation } from "@/app/interface/components/Animation";
 
 export default function Home() {
+    const nameRef = useRef("");
+    const emailRef = useRef("");
+    const messageRef = useRef("");
+    const [isLoading, setLoading] = useState(false);
+
     const skills = [
         { name: "Next.js" },
         { name: "React" },
@@ -79,6 +86,72 @@ export default function Home() {
         const filledStars = Array(note).fill(<AiFillStar size={25} />);
         const outlinedStars = Array(5 - note).fill(<AiOutlineStar size={25} />);
         return [...filledStars, ...outlinedStars];
+    }
+
+    function validMessage(object) {
+        let newObject = {};
+        const nameRegex = /^[a-zA-Z]+$/;
+        if (object.name && nameRegex.test(object.name)) {
+            newObject.name = object.name;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (object.email && emailRegex.test(object.email)) {
+            newObject.email = object.email;
+        }
+
+        const messageRegex = /\S+/;
+        if (object.message && messageRegex.test(object.message)) {
+            newObject.message = object.message;
+        }
+
+        if (!newObject.name || !newObject.email || !newObject.message) {
+            throw new Error("Alguma informação está incorreta!");
+        }
+        return newObject;
+    }
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+
+        if (isLoading) {
+            return false;
+        }
+
+        const name = nameRef.current.value;
+        const email = emailRef.current.value;
+        const message = messageRef.current.value;
+
+        setLoading(true);
+
+        try {
+            const object = validMessage({
+                name: name,
+                email: email,
+                message: message,
+            });
+
+            const response = await fetch(`/api/contact`, {
+                method: "POST",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: object.name,
+                    email: object.email,
+                    message: object.message,
+                }),
+            });
+
+            if (response.status === 200) {
+                setLoading(false);
+                return toast.success("Mensagem enviada com sucesso!");
+            }
+        } catch (error) {
+            setLoading(false);
+            return toast.error("Alguma informação está incorreta!");
+        }
     }
 
     return (
@@ -229,11 +302,12 @@ export default function Home() {
                     </div>
 
                     <div className="px-10 py-[12.0rem] max-w-[80.0rem] mx-auto">
-                        <form className="p-10 rounded-xl bg-[#1A1A1A] border-2 border-[#242424]">
+                        <form onSubmit={handleSubmit} className="p-10 rounded-xl bg-[#1A1A1A] border-2 border-[#242424]">
                             <div>
                                 <label className="text-[1.6rem] text-[#9A9A9A]">Nome</label>
 
                                 <input
+                                    ref={nameRef}
                                     id="nome"
                                     name="nome"
                                     type="text"
@@ -248,9 +322,10 @@ export default function Home() {
                                 <label className="text-[1.6rem] text-[#9A9A9A]">Email</label>
 
                                 <input
+                                    ref={emailRef}
                                     id="email"
                                     name="email"
-                                    type="text"
+                                    type="email"
                                     autoComplete="current-email"
                                     placeholder="Informe seu E-mail"
                                     required
@@ -262,6 +337,7 @@ export default function Home() {
                                 <label className="text-[1.6rem] text-[#9A9A9A]">Mensagem</label>
 
                                 <textarea
+                                    ref={messageRef}
                                     cols="30"
                                     rows="10"
                                     id="mensagem"
@@ -272,7 +348,16 @@ export default function Home() {
                                 />
                             </div>
 
-                            <button className="mt-[2.5rem] w-full py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:max-w-[20.0rem] sm:text-[2.0rem]">ENVIAR</button>
+                            <button type="submit" className="mt-[2.5rem] w-full py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:max-w-[20.0rem] sm:text-[2.0rem]">
+                                {isLoading ? (
+                                    <div className="w-full h-full flex items-center justify-center">
+                                        <div className="relative animate-spin w-[23px] h-[23px] border-4 border-l-white/75 border-white/25 rounded-full bg-transparent" />
+                                        <span className="relative p-2 text-[1.5rem]">Carregando...</span>
+                                    </div>
+                                ) : (
+                                    "ENVIAR"
+                                )}
+                            </button>
                         </form>
                     </div>
                 </Animation>
