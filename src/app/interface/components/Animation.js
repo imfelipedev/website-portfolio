@@ -1,23 +1,35 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import { useRef, useState, useEffect } from "react";
 
 export function Animation({ children }) {
-    const [isInView, setIsInView] = useState(false);
-    const { ref, inView } = useInView({
-        threshold: 0.3,
-        triggerOnce: true,
-    });
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
 
     useEffect(() => {
-        if (inView) {
-            setIsInView(true);
+        function checkPosition() {
+            const elementPadding = parseInt(getComputedStyle(ref.current).paddingTop);
+            const elementTop = ref.current.getBoundingClientRect().top + elementPadding;
+            const elementBottom = ref.current.getBoundingClientRect().bottom;
+            const windowHeight = window.innerHeight;
+            const topThreshold = 0;
+            const bottomThreshold = windowHeight;
+
+            if (elementTop < bottomThreshold && elementBottom > topThreshold) {
+                setIsVisible(true);
+            }
         }
-    }, [inView]);
+
+        window.addEventListener("scroll", checkPosition);
+        checkPosition();
+
+        return () => window.removeEventListener("scroll", checkPosition);
+    }, []);
 
     return (
-        <motion.div ref={ref} initial={{ opacity: 0, y: 80 }} animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 80 }} transition={{ duration: 1.5 }} style={{ minHeight: "100px" }}>
-            {children}
-        </motion.div>
+        <div ref={ref}>
+            <motion.div initial={{ opacity: 0, y: 150 }} animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 150 }} transition={{ duration: 2 }}>
+                {children}
+            </motion.div>
+        </div>
     );
 }
