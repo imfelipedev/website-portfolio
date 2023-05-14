@@ -54,24 +54,24 @@ export default function Home() {
 
     const evaluation = [
         {
-            author: "zFelpszada",
-            description: "O website foi entregue e testado. Com um design atraente, moderno e responsivo, excelente funcionalidade. Além disso, as medidas de segurança adequadas garantem a privacidade e a segurança dos jogadores",
-            note: 1,
+            author: "Ygot",
+            description: "O website foi entregue e testado. Com um design atraente, moderno e responsivo, excelente funcionalidade. Além disso, as medidas de segurança adequadas garantem a privacidade e a segurança dos jogadores.",
+            note: 5,
         },
         {
-            author: "zFelpszada",
-            description: "O website foi entregue e testado. Com um design atraente, moderno e responsivo, excelente funcionalidade. Além disso, as medidas de segurança adequadas garantem a privacidade e a segurança dos jogadores",
-            note: 2,
-        },
-        {
-            author: "zFelpszada",
-            description: "O website foi entregue e testado. Com um design atraente, moderno e responsivo, excelente funcionalidade. Além disso, as medidas de segurança adequadas garantem a privacidade e a segurança dos jogadores",
-            note: 3,
-        },
-        {
-            author: "zFelpszada",
-            description: "O website foi entregue e testado. Com um design atraente, moderno e responsivo, excelente funcionalidade. Além disso, as medidas de segurança adequadas garantem a privacidade e a segurança dos jogadores",
+            author: "String",
+            description: "Eu recentemente comprei um website. Fiquei impressionado com o resultado do projeto, desde a escolha do template até a personalização do layout.",
             note: 4,
+        },
+        {
+            author: "Leandro",
+            description: "Eu tive uma experiência incrível comprando um website para meu servidor de RP. Ótimo atendimento, muito prestativo e atencioso em relação às minhas necessidades e dúvidas.",
+            note: 5,
+        },
+        {
+            author: "Tioow",
+            description: "Eu tive a sorte de encontrar o Felipe para criar o meu site. Ele me guiou em todo o processo de criação, desde a criação até a publicação do site. Ele foi muito atencioso e atualizou eu em cada etapa do projeto.",
+            note: 5,
         },
     ];
 
@@ -117,8 +117,8 @@ export default function Home() {
                             <h3 className="text-[2.6rem] text-[#9A9A9A]">Conheça-me</h3>
 
                             <p className="mt-[3.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
-                                Sou desenvolvedor há 6 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e funcionais, do front-end ao back-end, com qualidade e
-                                responsividade no layout.
+                                Sou desenvolvedor há 6 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e funcionais, do front-end ao back-end, com qualidade e responsividade
+                                no layout.
                             </p>
 
                             <p className="mt-[2.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
@@ -126,8 +126,8 @@ export default function Home() {
                             </p>
 
                             <p className="mt-[2.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
-                                Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas habilidades e experiência, não hesite em entrar em
-                                contato comigo.
+                                Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas habilidades e experiência, não hesite em entrar em contato
+                                comigo.
                             </p>
 
                             <div className="mt-[3.0rem]">
@@ -225,9 +225,7 @@ export default function Home() {
 
                         <hr className="mx-auto mt-[2.0rem] w-[2.5rem] h-[0.5rem] rounded-lg border-0 bg-[#9A9A9A]" />
 
-                        <h2 className="mx-auto mt-[2.0rem] max-w-[90%] text-[1.5rem] text-center sm:text-[2.2rem]">
-                            Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível
-                        </h2>
+                        <h2 className="mx-auto mt-[2.0rem] max-w-[90%] text-[1.5rem] text-center sm:text-[2.2rem]">Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível</h2>
                     </div>
 
                     <div className="px-10 py-[12.0rem] max-w-[80.0rem] mx-auto">
