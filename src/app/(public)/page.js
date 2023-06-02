@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { toast } from "react-toastify";
 import { useRef, useState } from "react";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Animation } from "@/app/interface/components/Animation";
 
 export default function Home() {
@@ -58,35 +57,6 @@ export default function Home() {
             link: "https://website-figma.vercel.app/",
         },
     ];
-
-    const evaluation = [
-        {
-            author: "Ygot",
-            description: "O website foi entregue e testado. Com um design atraente, moderno e responsivo, excelente funcionalidade. Além disso, as medidas de segurança adequadas garantem a privacidade e a segurança dos jogadores.",
-            note: 5,
-        },
-        {
-            author: "String",
-            description: "Eu recentemente comprei um website. Fiquei impressionado com o resultado do projeto, desde a escolha do template até a personalização do layout.",
-            note: 4,
-        },
-        {
-            author: "Leandro",
-            description: "Eu tive uma experiência incrível comprando um website para meu servidor de RP. Ótimo atendimento, muito prestativo e atencioso em relação às minhas necessidades e dúvidas.",
-            note: 5,
-        },
-        {
-            author: "Tioow",
-            description: "Eu tive a sorte de encontrar o Felipe para criar o meu site. Ele me guiou em todo o processo de criação, desde a criação até a publicação do site. Ele foi muito atencioso e atualizou eu em cada etapa do projeto.",
-            note: 5,
-        },
-    ];
-
-    function convertNoteInIcon(note) {
-        const filledStars = Array(note).fill(<AiFillStar size={25} />);
-        const outlinedStars = Array(5 - note).fill(<AiOutlineStar size={25} />);
-        return [...filledStars, ...outlinedStars];
-    }
 
     function validMessage(object) {
         let newObject = {};
@@ -203,7 +173,7 @@ export default function Home() {
                                 comigo.
                             </p>
 
-                            <div className="mt-[3.0rem]">
+                            <div className="mt-[4.5rem]">
                                 <a href="#contact" aria-label="Redirecionar para sessão de contato." className="px-28 py-5 rounded-lg bg-[#1A1A1A] text-[#9A9A9A] text-[1.3rem] sm:text-[2.0rem]">
                                     CONTATO
                                 </a>
@@ -260,38 +230,7 @@ export default function Home() {
                 </Animation>
             </section>
 
-            <section id="evaluation" className="w-full h-full bg-[#242424]">
-                <Animation>
-                    <div className="pt-[12.0rem] mx-auto max-w-[95.0rem]">
-                        <h1 className="text-[#9A9A9A] text-[3.5rem] text-center font-extrabold">Avaliações</h1>
-
-                        <hr className="mx-auto mt-[2.0rem] w-[2.5rem] h-[0.5rem] rounded-lg border-0 bg-[#9A9A9A]" />
-
-                        <h2 className="mx-auto mt-[2.0rem] max-w-[90%] text-[1.5rem] text-center sm:text-[2.2rem]">
-                            Encontre avaliações de clientes satisfeitos com os projetos que desenvolvi, e tome uma decisão confiante para o seu próximo projeto.
-                        </h2>
-                    </div>
-
-                    <div className="p-4 mx-auto py-[12.0rem] max-w-[140.0rem] grid gap-5 justify-items-center lg:grid-flow-col">
-                        {evaluation.map((value, index) => (
-                            <div key={index} className="max-w-[30.0rem] w-full h-[20.0rem] rounded-xl bg-[#1A1A1A] border-2 border-[#242424] grid">
-                                <h1 className="pt-6 text-[#9A9A9A] text-[1.5rem] text-center font-bold lg:text-[2.0rem]">{value.author}</h1>
-
-                                <p className="px-10 text-[#8A8A8A] text-[0.9rem] lg:text-[1.1rem]">{value.description}</p>
-
-                                <div className="mx-auto flex gap-5 text-yellow-300">
-                                    {convertNoteInIcon(value.note).map((star, index2) => (
-                                        <span key={index2}>{star}</span>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </Animation>
-            </section>
-
-            <section id="contact" className="w-full h-full relative">
-                <Image className="-z-10 bg-[#161616]" src="/main/background.svg" alt="Background" style={{ objectFit: "cover" }} fill={true} quality={100} priority />
+            <section id="contact" className="w-full h-full bg-[#242424]">
                 <Animation>
                     <div className="pt-[12.0rem] mx-auto max-w-[95.0rem]">
                         <h1 className="text-[#9A9A9A] text-[3.5rem] text-center font-extrabold">CONTATO</h1>

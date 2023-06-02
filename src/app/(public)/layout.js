@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="pt-br" className={poppins.className}>
             <body>
-                <main id="app" className="max-w-full max-h-full min-h-[100vh]">
+                <main id="app">
                     <Navbar />
                     {children}
                     <Footer />

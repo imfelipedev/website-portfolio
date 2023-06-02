@@ -1,9 +1,11 @@
+import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { TiSocialTwitterCircular } from "react-icons/ti";
 
 export function Footer() {
     return (
-        <footer className="w-full h-full bg-[#242424]">
+        <footer className="w-full h-full relative">
+            <Image className="-z-10 bg-[#161616]" src="/main/background.svg" alt="Background" style={{ objectFit: "cover" }} fill={true} quality={100} priority />
             <div className="px-4 mx-auto max-w-[120.0rem]">
                 <div className="py-[2.0rem] sm:py-[8.0rem] sm:flex sm:justify-between">
                     <div className="sm:max-w-[40%]">
