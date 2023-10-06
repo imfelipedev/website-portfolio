@@ -178,7 +178,7 @@ export default function Home() {
                             <h3 className="text-[2.6rem] text-[#9A9A9A]">Conheça-me</h3>
 
                             <p className="mt-[3.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
-                                Sou desenvolvedor há 6 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e
+                                Sou desenvolvedor há 7 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e
                                 funcionais, do front-end ao back-end, com qualidade e responsividade no layout.
                             </p>
 
