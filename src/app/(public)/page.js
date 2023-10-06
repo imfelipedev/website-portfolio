@@ -32,6 +32,12 @@ export default function Home() {
 
     const projets = [
         {
+            name: "Website - FPL",
+            description: "Projeto realizado para minha empresa, desenvolvido em Nextjs e React, esse website foi desenvolvido para minha empresa pessoal e clientes da mesma.",
+            path: "/projetos/fpl.png",
+            link: "https://website-fpl.vercel.app/",
+        },
+        {
             name: "Website - WAZE RP",
             description: "Projeto realizado para um client, desenvolvido em Nextjs e React, esse website foi desenvolvido para um servidor de MTA:SA.",
             path: "/projetos/wazerp.png",
@@ -45,7 +51,8 @@ export default function Home() {
         },
         {
             name: "Website - Mistic Protection",
-            description: "Projeto desenvolvido em Nextjs e React, esse website foi desenvolvido para uma loja de MTA:SA, com sistema de gerencimando de planos, contas e proteções.",
+            description:
+                "Projeto desenvolvido em Nextjs e React, esse website foi desenvolvido para uma loja de MTA:SA, com sistema de gerencimando de planos, contas e proteções.",
             path: "/projetos/mistic.png",
             link: "https://website-mistic.vercel.app/",
         },
@@ -58,7 +65,8 @@ export default function Home() {
         },
         {
             name: "Website - FIGMA TO MTA",
-            description: "Projeto desenvolvido em NextJS e React, esse website foi desenvolvido para converter design do FIGMA para o MTA:SA, porém com um diferencial dos outros, ele converte em hierarquia e escala.",
+            description:
+                "Projeto desenvolvido em NextJS e React, esse website foi desenvolvido para converter design do FIGMA para o MTA:SA, porém com um diferencial dos outros, ele converte em hierarquia e escala.",
             path: "/projetos/figma.png",
             link: "https://website-figma.vercel.app/",
         },
@@ -142,7 +150,11 @@ export default function Home() {
                             Sou um desenvolvedor full-stack especializado em criar websites escaláveis e responsivos, adaptados perfeitamente às suas necessidades e preferências.
                         </h2>
 
-                        <a href="#projects" aria-label="Redirecionar para sessão de projeto." className="mt-20 px-32 py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:text-[2.0rem]">
+                        <a
+                            href="#projects"
+                            aria-label="Redirecionar para sessão de projeto."
+                            className="mt-20 px-32 py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:text-[2.0rem]"
+                        >
                             PROJETOS
                         </a>
                     </div>
@@ -166,8 +178,8 @@ export default function Home() {
                             <h3 className="text-[2.6rem] text-[#9A9A9A]">Conheça-me</h3>
 
                             <p className="mt-[3.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
-                                Sou desenvolvedor há 6 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e funcionais, do front-end ao back-end, com qualidade e responsividade
-                                no layout.
+                                Sou desenvolvedor há 6 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e
+                                funcionais, do front-end ao back-end, com qualidade e responsividade no layout.
                             </p>
 
                             <p className="mt-[2.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
@@ -175,12 +187,16 @@ export default function Home() {
                             </p>
 
                             <p className="mt-[2.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
-                                Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas habilidades e experiência, não hesite em entrar em contato
-                                comigo.
+                                Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas
+                                habilidades e experiência, não hesite em entrar em contato comigo.
                             </p>
 
                             <div className="mt-[4.5rem]">
-                                <a href="#contact" aria-label="Redirecionar para sessão de contato." className="px-28 py-5 rounded-lg bg-[#1A1A1A] text-[#9A9A9A] text-[1.3rem] sm:text-[2.0rem]">
+                                <a
+                                    href="#contact"
+                                    aria-label="Redirecionar para sessão de contato."
+                                    className="px-28 py-5 rounded-lg bg-[#1A1A1A] text-[#9A9A9A] text-[1.3rem] sm:text-[2.0rem]"
+                                >
                                     CONTATO
                                 </a>
                             </div>
@@ -225,7 +241,11 @@ export default function Home() {
                                     <h2 className="mt-[3.0rem] text-[1.5rem] sm:text-[1.8rem]">{value.description}</h2>
 
                                     <div className="mt-[3.0rem]">
-                                        <a href={value.link} aria-label="Redirecionar para um site." className="px-32 py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:text-[2.0rem]">
+                                        <a
+                                            href={value.link}
+                                            aria-label="Redirecionar para um site."
+                                            className="px-32 py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:text-[2.0rem]"
+                                        >
                                             VISITAR
                                         </a>
                                     </div>
@@ -243,7 +263,9 @@ export default function Home() {
 
                         <hr className="mx-auto mt-[2.0rem] w-[2.5rem] h-[0.5rem] rounded-lg border-0 bg-[#9A9A9A]" />
 
-                        <h2 className="mx-auto mt-[2.0rem] max-w-[90%] text-[1.5rem] text-center sm:text-[2.2rem]">Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível</h2>
+                        <h2 className="mx-auto mt-[2.0rem] max-w-[90%] text-[1.5rem] text-center sm:text-[2.2rem]">
+                            Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível
+                        </h2>
                     </div>
 
                     <div className="px-10 py-[12.0rem] max-w-[80.0rem] mx-auto">
@@ -293,7 +315,10 @@ export default function Home() {
                                 />
                             </div>
 
-                            <button type="submit" className="mt-[2.5rem] w-full py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:max-w-[20.0rem] sm:text-[2.0rem]">
+                            <button
+                                type="submit"
+                                className="mt-[2.5rem] w-full py-5 rounded-lg bg-[#1A1A1A] border-2 border-[#242424] text-[#9A9A9A] text-[1.0rem] sm:max-w-[20.0rem] sm:text-[2.0rem]"
+                            >
                                 {isLoading ? (
                                     <div className="w-full h-full flex items-center justify-center">
                                         <div className="relative animate-spin w-[23px] h-[23px] border-4 border-l-white/75 border-white/25 rounded-full bg-transparent" />
