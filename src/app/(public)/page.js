@@ -47,7 +47,7 @@ export default function Home() {
             name: "Website - 171 Roleplay",
             description: "Projeto desenvolvido em Nextjs e React, esse website foi desenvolvido para um servidor de MTA:SA, totalmente vinculado com o servidor.",
             path: "/projetos/171roleplay.png",
-            link: "https://171-website.vercel.app/",
+            link: "https://website-171-rp.vercel.app",
         },
         {
             name: "Website - Mistic Protection",
@@ -61,7 +61,7 @@ export default function Home() {
             description: "Projeto desenvolvido em Nextjs e React, esse website foi desenvolvido para divulgação de eventos e outros afins.",
             path: "/projetos/events.png",
             link: "https://website-events.vercel.app/",
-            github: "https://github.com/zFelpszada/website-events",
+            github: "https://github.com/zFelipeA/website-events",
         },
         {
             name: "Website - FIGMA TO MTA",
