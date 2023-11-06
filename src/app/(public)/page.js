@@ -33,6 +33,13 @@ export default function Home() {
     const projets = [
         {
             name: "Website - FPL",
+            description:
+                "Este projeto foi concebido para destacar minhas habilidades e conhecimentos, sendo construído com a elegância do React no front-end e o poder do Node.js no back-end, utilizando WebSocket para uma experiência excepcional.",
+            path: "/projetos/chat-ws.png",
+            link: "https://website-chat-ws.vercel.app/",
+        },
+        {
+            name: "Website - FPL",
             description: "Projeto realizado para minha empresa, desenvolvido em Nextjs e React, esse website foi desenvolvido para minha empresa pessoal e clientes da mesma.",
             path: "/projetos/fpl.png",
             link: "https://website-fpl.vercel.app/",
