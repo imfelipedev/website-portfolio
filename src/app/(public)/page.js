@@ -32,6 +32,13 @@ export default function Home() {
 
     const projets = [
         {
+            name: "Website - Fantasy Resources",
+            description:
+                "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, aonde todo processo de pagamento e entrega foi totalmente automatizado, utilizando as APIs do Mercado Pago e PicPay.",
+            path: "/projetos/fantasy.png",
+            link: "https://website-fantasy.vercel.app/",
+        },
+        {
             name: "Website - CHAT WS",
             description:
                 "Este projeto foi concebido para destacar minhas habilidades e conhecimentos, sendo construído com a elegância do React no front-end e o poder do Node.js no back-end, utilizando WebSocket para uma experiência excepcional.",
