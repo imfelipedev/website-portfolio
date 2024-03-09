@@ -32,6 +32,13 @@ export default function Home() {
 
     const projets = [
         {
+            name: "Website - Processo RP",
+            description:
+                "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, aonde todo processo de pagamento e entrega foi totalmente automatizado para o jogo MTA:SA, utilizando as APIs do Mercado Pago e Paypal.",
+            path: "/projetos/processo-rp.png",
+            link: "https://processoroleplay.com/",
+        },
+        {
             name: "Website - Fantasy Resources",
             description:
                 "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, aonde todo processo de pagamento e entrega foi totalmente automatizado, utilizando as APIs do Mercado Pago e PicPay.",
