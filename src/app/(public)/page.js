@@ -31,24 +31,27 @@ export default function Home() {
     ];
 
     const projets = [
+         {
+            name: "Website - Demonstration",
+            description: "Este website foi concebido com a finalidade de apresentar amplamente minhas habilidades em React, Nest.js e Node.js, demonstrando meu domínio completo nessas tecnologias.",
+            path: "/projetos/demonstration.png",
+            link: "https://website-demonstration-front-end.vercel.app/login",
+        },
         {
             name: "Website - Processo RP",
-            description:
-                "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, aonde todo processo de pagamento e entrega foi totalmente automatizado para o jogo MTA:SA, utilizando as APIs do Mercado Pago e Paypal.",
+            description: "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, aonde todo processo de pagamento e entrega foi totalmente automatizado para o jogo MTA:SA, utilizando as APIs do Mercado Pago e Paypal.",
             path: "/projetos/processo-rp.png",
             link: "https://processoroleplay.com/",
         },
         {
             name: "Website - Fantasy Resources",
-            description:
-                "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, aonde todo processo de pagamento e entrega foi totalmente automatizado, utilizando as APIs do Mercado Pago e PicPay.",
+            description: "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, aonde todo processo de pagamento e entrega foi totalmente automatizado, utilizando as APIs do Mercado Pago e PicPay.",
             path: "/projetos/fantasy.png",
             link: "https://website-fantasy.vercel.app/",
         },
         {
             name: "Website - CHAT WS",
-            description:
-                "Este projeto foi concebido para destacar minhas habilidades e conhecimentos, sendo construído com a elegância do React no front-end e o poder do Node.js no back-end, utilizando WebSocket para uma experiência excepcional.",
+            description: "Este projeto foi concebido para destacar minhas habilidades e conhecimentos, sendo construído com a elegância do React no front-end e o poder do Node.js no back-end, utilizando WebSocket para uma experiência excepcional.",
             path: "/projetos/chat-ws.png",
             link: "https://website-chat-ws.vercel.app/",
         },
@@ -72,8 +75,7 @@ export default function Home() {
         },
         {
             name: "Website - Mistic Protection",
-            description:
-                "Projeto desenvolvido em Nextjs e React, esse website foi desenvolvido para uma loja de MTA:SA, com sistema de gerencimando de planos, contas e proteções.",
+            description: "Projeto desenvolvido em Nextjs e React, esse website foi desenvolvido para uma loja de MTA:SA, com sistema de gerencimando de planos, contas e proteções.",
             path: "/projetos/mistic.png",
             link: "https://website-mistic.vercel.app/",
         },
@@ -86,8 +88,7 @@ export default function Home() {
         },
         {
             name: "Website - FIGMA TO MTA",
-            description:
-                "Projeto desenvolvido em NextJS e React, esse website foi desenvolvido para converter design do FIGMA para o MTA:SA, porém com um diferencial dos outros, ele converte em hierarquia e escala.",
+            description: "Projeto desenvolvido em NextJS e React, esse website foi desenvolvido para converter design do FIGMA para o MTA:SA, porém com um diferencial dos outros, ele converte em hierarquia e escala.",
             path: "/projetos/figma.png",
             link: "https://website-figma.vercel.app/",
         },
