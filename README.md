@@ -85,8 +85,8 @@ Here are the main features of the project.
 
 ## 📎 Links
 
--   Deploy on [Vercel](https://vercel.com/): https://zfelipe-portfolio.vercel.app/
--   Repository: https://github.com/zFelpszada/website-portfolio
+-   Deploy on [Vercel](https://vercel.com/): https://imfelipedev.vercel.app/
+-   Repository: https://github.com/imfelipedev/website-portfolio
 
 ## 🔰 Versioning
 
