@@ -12,22 +12,24 @@ export default function Home() {
     const [isLoading, setLoading] = useState(false);
 
     const skills = [
+        { name: "Node.js" },
+        { name: "Nest.js" },
         { name: "Next.js" },
         { name: "React" },
         { name: "Vue.js" },
-        { name: "Node.js" },
         { name: "Tailwind CSS" },
         { name: "HTML" },
         { name: "CSS" },
-        { name: "Javascript" },
-        { name: "Lua" },
         { name: "MySQL" },
         { name: "SQlite" },
         { name: "MongoDB" },
         { name: "Git" },
-        { name: "Github" },
         { name: "Responsive Design" },
         { name: "SEO" },
+        { name: "Javascript" },
+        { name: "Java" },
+        { name: "Rust" },
+        { name: "Lua" },
     ];
 
     const projets = [
@@ -200,7 +202,7 @@ export default function Home() {
                             <h3 className="text-[2.6rem] text-[#9A9A9A]">Conheça-me</h3>
 
                             <p className="mt-[3.0rem] text-[#8A8A8A] text-[1.3rem] sm:text-[1.6rem]">
-                                Sou desenvolvedor há 7 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e
+                                Sou desenvolvedor há 5 anos e tenho conhecimento em diversas tecnologias. Possuo habilidades para criar projetos eficientes, otimizados e
                                 funcionais, do front-end ao back-end, com qualidade e responsividade no layout.
                             </p>
 
