@@ -20,7 +20,7 @@ export function Footer() {
                         <h1 className="text-[2.0rem] text-[#9A9A9A]">CONTATOS</h1>
 
                         <div className="mt-[2.0rem] text-[#9A9A9A] flex items-center gap-3">
-                            <a href="https://github.com/zFelipeA" aria-label="Redirecionar para github.">
+                            <a href="https://github.com/imfelipedev" aria-label="Redirecionar para github.">
                                 <AiFillGithub size={25} />
                             </a>
 
