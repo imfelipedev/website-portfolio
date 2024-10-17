@@ -1,11 +1,8 @@
-import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
-import { TiSocialTwitterCircular } from "react-icons/ti";
 
 export function Footer() {
     return (
-        <footer className="w-full h-full relative">
-            <Image className="-z-10 bg-[#161616]" src="/main/background.svg" alt="Background" style={{ objectFit: "cover" }} fill={true} quality={100} priority />
+        <footer className="w-full h-full bg-[#212121] relative">
             <div className="px-4 mx-auto max-w-[120.0rem]">
                 <div className="py-[2.0rem] sm:py-[8.0rem] sm:flex sm:justify-between">
                     <div className="sm:max-w-[40%]">
@@ -23,15 +20,12 @@ export function Footer() {
                             <a href="https://github.com/imfelipedev" aria-label="Redirecionar para github.">
                                 <AiFillGithub size={25} />
                             </a>
-
-                            <a href="https://twitter.com/zFelpszada" aria-label="Redirecionar twitter.">
-                                <TiSocialTwitterCircular size={29} />
-                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div className="py-[4.0rem] border-t-2 border-[#515151]">
-                    <p className="text-[1.3rem] text-[#9A9A9A] text-center">© Copyright 2023. Desenvolvido por Felipe DEV.</p>
+                    <p className="text-[1.3rem] text-[#9A9A9A] text-center">© Copyright 2024. Desenvolvido por Felipe DEV.</p>
                 </div>
             </div>
         </footer>
