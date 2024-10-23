@@ -35,7 +35,12 @@ export default function Home() {
             path: "/projetos/processo-rp.png",
             link: "https://processoroleplay.com/",
         },
-
+        {
+            name: "Website - Ilhabela Roleplay",
+            description: "Este projeto foi desenvolvido para um cliente. O website é um modelo de loja online, com sistema de Whitelist (questionário para ingressar ao servidor), para o jogo MTA:SA.",
+            path: "/projetos/ilhabela.png",
+            link: "https://website-ilhabela.vercel.app/",
+        },
         {
             name: "Website - CHAT WS",
             description:
